@@ -29,7 +29,5 @@ namespace StitchOfflineMapCSharp
             return directory;
         }
 
-
-
     }
 }

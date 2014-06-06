@@ -1,0 +1,9 @@
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\bin\Debug\StitchOfflineMapCSharp.exe
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\bin\Debug\StitchOfflineMapCSharp.pdb
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.Properties.Resources.resources
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.StitchOfflineMap.resources
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.exe
+D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.pdb

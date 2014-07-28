@@ -19,7 +19,7 @@ namespace StitchOfflineMapCSharp
         {
             string directory = string.Empty;
             FolderBrowserDialog FdBrsDlg = new FolderBrowserDialog();
-            FdBrsDlg.Description = "please chose folder";
+            FdBrsDlg.Description = "please choose folder";
             FdBrsDlg.ShowNewFolderButton = false;
             //FdBrsDlg.RootFolder = Environment.SpecialFolder.Programs;
             FdBrsDlg.ShowDialog();
@@ -28,6 +28,5 @@ namespace StitchOfflineMapCSharp
             directory = FdBrsDlg.SelectedPath;
             return directory;
         }
-
     }
 }

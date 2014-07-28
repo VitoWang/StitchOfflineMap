@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.PictureBox ShowStitch_Picturebox;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StitchOfflineMap));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.taskToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setThreadNumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,25 +39,29 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.Result_groupBox = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Resources_groupBox = new System.Windows.Forms.GroupBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.save_stitch = new System.Windows.Forms.Button();
             this.StartStitch = new System.Windows.Forms.Button();
             this.ChoseDirectory_Button = new System.Windows.Forms.Button();
             this.ShowDirectory_Textbox = new System.Windows.Forms.TextBox();
             this.ChoseDirectory_Lable = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            ShowStitch_Picturebox = new System.Windows.Forms.PictureBox();
+            this.startMerge = new System.Windows.Forms.Button();
+            this.addMergeResources_button = new System.Windows.Forms.Button();
+            this.mergeresources_listBox = new System.Windows.Forms.ListBox();
+            this.mergeSave_button = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(ShowStitch_Picturebox)).BeginInit();
             this.panel2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -70,15 +72,24 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(855, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(854, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
             this.fileToolStripMenuItem.Text = "File";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // taskToolStripMenuItem
             // 
@@ -106,7 +117,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(855, 481);
+            this.panel1.Size = new System.Drawing.Size(854, 449);
             this.panel1.TabIndex = 1;
             // 
             // tabControl1
@@ -117,7 +128,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(855, 481);
+            this.tabControl1.Size = new System.Drawing.Size(854, 449);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -127,7 +138,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(847, 455);
+            this.tabPage1.Size = new System.Drawing.Size(846, 423);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Seamless Splicing";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -137,51 +148,53 @@
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(3, 144);
+            this.panel3.Location = new System.Drawing.Point(3, 112);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(841, 308);
+            this.panel3.Size = new System.Drawing.Size(840, 308);
             this.panel3.TabIndex = 1;
             // 
             // panel5
             // 
+            this.panel5.Controls.Add(this.Result_groupBox);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel5.Location = new System.Drawing.Point(412, 0);
+            this.panel5.Location = new System.Drawing.Point(411, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(429, 308);
             this.panel5.TabIndex = 1;
             // 
+            // Result_groupBox
+            // 
+            this.Result_groupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Result_groupBox.Location = new System.Drawing.Point(0, 0);
+            this.Result_groupBox.Name = "Result_groupBox";
+            this.Result_groupBox.Size = new System.Drawing.Size(429, 308);
+            this.Result_groupBox.TabIndex = 0;
+            this.Result_groupBox.TabStop = false;
+            this.Result_groupBox.Text = "Result";
+            this.Result_groupBox.Paint += new System.Windows.Forms.PaintEventHandler(this.Result_groupBox_Paint);
+            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.groupBox1);
+            this.panel4.Controls.Add(this.Resources_groupBox);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(406, 308);
             this.panel4.TabIndex = 0;
             // 
-            // groupBox1
+            // Resources_groupBox
             // 
-            this.groupBox1.Controls.Add(ShowStitch_Picturebox);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(406, 308);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Result";
-            // 
-            // ShowStitch_Picturebox
-            // 
-            ShowStitch_Picturebox.Dock = System.Windows.Forms.DockStyle.Fill;
-            ShowStitch_Picturebox.Image = ((System.Drawing.Image)(resources.GetObject("ShowStitch_Picturebox.Image")));
-            ShowStitch_Picturebox.Location = new System.Drawing.Point(3, 17);
-            ShowStitch_Picturebox.Name = "ShowStitch_Picturebox";
-            ShowStitch_Picturebox.Size = new System.Drawing.Size(400, 288);
-            ShowStitch_Picturebox.TabIndex = 0;
-            ShowStitch_Picturebox.TabStop = false;
+            this.Resources_groupBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Resources_groupBox.Location = new System.Drawing.Point(0, 0);
+            this.Resources_groupBox.Name = "Resources_groupBox";
+            this.Resources_groupBox.Size = new System.Drawing.Size(406, 308);
+            this.Resources_groupBox.TabIndex = 0;
+            this.Resources_groupBox.TabStop = false;
+            this.Resources_groupBox.Text = "Resources";
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.save_stitch);
             this.panel2.Controls.Add(this.StartStitch);
             this.panel2.Controls.Add(this.ChoseDirectory_Button);
             this.panel2.Controls.Add(this.ShowDirectory_Textbox);
@@ -189,12 +202,22 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(841, 135);
+            this.panel2.Size = new System.Drawing.Size(840, 135);
             this.panel2.TabIndex = 0;
+            // 
+            // save_stitch
+            // 
+            this.save_stitch.Location = new System.Drawing.Point(446, 77);
+            this.save_stitch.Name = "save_stitch";
+            this.save_stitch.Size = new System.Drawing.Size(75, 23);
+            this.save_stitch.TabIndex = 4;
+            this.save_stitch.Text = "Save Result";
+            this.save_stitch.UseVisualStyleBackColor = true;
+            this.save_stitch.Click += new System.EventHandler(this.save_stitch_Click);
             // 
             // StartStitch
             // 
-            this.StartStitch.Location = new System.Drawing.Point(365, 82);
+            this.StartStitch.Location = new System.Drawing.Point(310, 77);
             this.StartStitch.Name = "StartStitch";
             this.StartStitch.Size = new System.Drawing.Size(75, 23);
             this.StartStitch.TabIndex = 3;
@@ -232,94 +255,79 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.mergeSave_button);
+            this.tabPage2.Controls.Add(this.startMerge);
+            this.tabPage2.Controls.Add(this.addMergeResources_button);
+            this.tabPage2.Controls.Add(this.mergeresources_listBox);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(847, 455);
+            this.tabPage2.Size = new System.Drawing.Size(846, 423);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Merge";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // imageList1
+            // startMerge
             // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "6570_1265.png");
-            this.imageList1.Images.SetKeyName(1, "6570_1266.png");
-            this.imageList1.Images.SetKeyName(2, "6570_1267.png");
-            this.imageList1.Images.SetKeyName(3, "6570_1268.png");
-            this.imageList1.Images.SetKeyName(4, "6570_1269.png");
-            this.imageList1.Images.SetKeyName(5, "6570_1270.png");
-            this.imageList1.Images.SetKeyName(6, "6571_1265.png");
-            this.imageList1.Images.SetKeyName(7, "6571_1266.png");
-            this.imageList1.Images.SetKeyName(8, "6571_1267.png");
-            this.imageList1.Images.SetKeyName(9, "6571_1268.png");
-            this.imageList1.Images.SetKeyName(10, "6571_1269.png");
-            this.imageList1.Images.SetKeyName(11, "6571_1270.png");
-            this.imageList1.Images.SetKeyName(12, "6572_1265.png");
-            this.imageList1.Images.SetKeyName(13, "6572_1266.png");
-            this.imageList1.Images.SetKeyName(14, "6572_1267.png");
-            this.imageList1.Images.SetKeyName(15, "6572_1268.png");
-            this.imageList1.Images.SetKeyName(16, "6572_1269.png");
-            this.imageList1.Images.SetKeyName(17, "6572_1270.png");
-            this.imageList1.Images.SetKeyName(18, "6573_1265.png");
-            this.imageList1.Images.SetKeyName(19, "6573_1266.png");
-            this.imageList1.Images.SetKeyName(20, "6573_1267.png");
-            this.imageList1.Images.SetKeyName(21, "6573_1268.png");
-            this.imageList1.Images.SetKeyName(22, "6573_1269.png");
-            this.imageList1.Images.SetKeyName(23, "6573_1270.png");
-            this.imageList1.Images.SetKeyName(24, "6574_1265.png");
-            this.imageList1.Images.SetKeyName(25, "6574_1266.png");
-            this.imageList1.Images.SetKeyName(26, "6574_1267.png");
-            this.imageList1.Images.SetKeyName(27, "6574_1268.png");
-            this.imageList1.Images.SetKeyName(28, "6574_1269.png");
-            this.imageList1.Images.SetKeyName(29, "6574_1270.png");
-            this.imageList1.Images.SetKeyName(30, "6575_1265.png");
-            this.imageList1.Images.SetKeyName(31, "6575_1266.png");
-            this.imageList1.Images.SetKeyName(32, "6575_1267.png");
-            this.imageList1.Images.SetKeyName(33, "6575_1268.png");
-            this.imageList1.Images.SetKeyName(34, "6575_1269.png");
-            this.imageList1.Images.SetKeyName(35, "6575_1270.png");
-            this.imageList1.Images.SetKeyName(36, "6576_1265.png");
-            this.imageList1.Images.SetKeyName(37, "6576_1266.png");
-            this.imageList1.Images.SetKeyName(38, "6576_1267.png");
-            this.imageList1.Images.SetKeyName(39, "6576_1268.png");
-            this.imageList1.Images.SetKeyName(40, "6576_1269.png");
-            this.imageList1.Images.SetKeyName(41, "6576_1270.png");
-            this.imageList1.Images.SetKeyName(42, "6577_1265.png");
-            this.imageList1.Images.SetKeyName(43, "6577_1266.png");
-            this.imageList1.Images.SetKeyName(44, "6577_1267.png");
-            this.imageList1.Images.SetKeyName(45, "6577_1268.png");
-            this.imageList1.Images.SetKeyName(46, "6577_1269.png");
-            this.imageList1.Images.SetKeyName(47, "6577_1270.png");
-            this.imageList1.Images.SetKeyName(48, "6578_1265.png");
-            this.imageList1.Images.SetKeyName(49, "6578_1266.png");
-            this.imageList1.Images.SetKeyName(50, "6578_1267.png");
-            this.imageList1.Images.SetKeyName(51, "6578_1268.png");
-            this.imageList1.Images.SetKeyName(52, "6578_1269.png");
-            this.imageList1.Images.SetKeyName(53, "6578_1270.png");
+            this.startMerge.Location = new System.Drawing.Point(269, 189);
+            this.startMerge.Name = "startMerge";
+            this.startMerge.Size = new System.Drawing.Size(75, 23);
+            this.startMerge.TabIndex = 2;
+            this.startMerge.Text = "start";
+            this.startMerge.UseVisualStyleBackColor = true;
+            this.startMerge.Click += new System.EventHandler(this.startMerge_Click);
+            // 
+            // addMergeResources_button
+            // 
+            this.addMergeResources_button.Location = new System.Drawing.Point(46, 125);
+            this.addMergeResources_button.Name = "addMergeResources_button";
+            this.addMergeResources_button.Size = new System.Drawing.Size(75, 23);
+            this.addMergeResources_button.TabIndex = 1;
+            this.addMergeResources_button.Text = "Add";
+            this.addMergeResources_button.UseVisualStyleBackColor = true;
+            this.addMergeResources_button.Click += new System.EventHandler(this.addMergeResources_button_Click);
+            // 
+            // mergeresources_listBox
+            // 
+            this.mergeresources_listBox.FormattingEnabled = true;
+            this.mergeresources_listBox.ItemHeight = 12;
+            this.mergeresources_listBox.Location = new System.Drawing.Point(3, 3);
+            this.mergeresources_listBox.Name = "mergeresources_listBox";
+            this.mergeresources_listBox.Size = new System.Drawing.Size(430, 88);
+            this.mergeresources_listBox.TabIndex = 0;
+            // 
+            // mergeSave_button
+            // 
+            this.mergeSave_button.Location = new System.Drawing.Point(357, 189);
+            this.mergeSave_button.Name = "mergeSave_button";
+            this.mergeSave_button.Size = new System.Drawing.Size(75, 23);
+            this.mergeSave_button.TabIndex = 3;
+            this.mergeSave_button.Text = "save";
+            this.mergeSave_button.UseVisualStyleBackColor = true;
+            this.mergeSave_button.Click += new System.EventHandler(this.mergeSave_button_Click);
             // 
             // StitchOfflineMap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(855, 506);
+            this.ClientSize = new System.Drawing.Size(854, 474);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "StitchOfflineMap";
             this.Text = "StitchOfflineMap";
+            this.Load += new System.EventHandler(this.StitchOfflineMap_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(ShowStitch_Picturebox)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,7 +352,13 @@
         private System.Windows.Forms.Button StartStitch;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.GroupBox Resources_groupBox;
+        private System.Windows.Forms.GroupBox Result_groupBox;
+        private System.Windows.Forms.Button save_stitch;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.Button addMergeResources_button;
+        private System.Windows.Forms.ListBox mergeresources_listBox;
+        private System.Windows.Forms.Button startMerge;
+        private System.Windows.Forms.Button mergeSave_button;
     }
 }

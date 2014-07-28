@@ -7,3 +7,14 @@ D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapC
 D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.exe
 D:\VITO\work\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.pdb
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\bin\Debug\StitchOfflineMapCSharp.exe.manifest
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\bin\Debug\StitchOfflineMapCSharp.application
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\bin\Debug\StitchOfflineMapCSharp.exe
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\bin\Debug\StitchOfflineMapCSharp.pdb
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.StitchOfflineMap.resources
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.Properties.Resources.resources
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.csproj.GenerateResource.Cache
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.exe.manifest
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.application
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.exe
+D:\Tempstation\StitchOfflineMap.git\trunk\StitchOfflineMapCSharp\StitchOfflineMapCSharp\obj\x86\Debug\StitchOfflineMapCSharp.pdb

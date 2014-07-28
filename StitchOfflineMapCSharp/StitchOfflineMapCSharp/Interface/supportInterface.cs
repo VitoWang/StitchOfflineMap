@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Drawing;
 
 namespace StitchOfflineMapCSharp.Interface
 {
@@ -15,7 +16,7 @@ namespace StitchOfflineMapCSharp.Interface
         /// </summary>
         /// <param name="directory"></param>
         /// <returns></returns>
-        string[] getMapsNames(string directory);
+        List<string> getMapsNames(string directory);
 
         /// <summary>
         /// get size of array
@@ -36,6 +37,6 @@ namespace StitchOfflineMapCSharp.Interface
         /// output it in a parallized directory
         /// </summary>
         /// <param name="directory"></param>
-        void StitchMaps(string directory);
+        Bitmap StitchMaps(string directory);
     }
 }

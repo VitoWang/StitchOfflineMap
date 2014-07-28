@@ -13,6 +13,22 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Administrator\Desktop\publication\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -32,6 +48,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B790493FAB9C6A0AF24B376F0D048BDC02140B75</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>StitchOfflineMapCSharp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -57,139 +85,161 @@
     <Compile Include="Form\StitchOfflineMap.Designer.cs">
       <DependentUpon>StitchOfflineMap.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Form\StitchOfflineMap.resx">
       <DependentUpon>StitchOfflineMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="StitchOfflineMapCSharp_TemporaryKey.pfx" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <Content Include="DataSources\mapi\13\6570_1265.png" />
-    <Content Include="DataSources\mapi\13\6570_1266.png" />
-    <Content Include="DataSources\mapi\13\6570_1267.png" />
-    <Content Include="DataSources\mapi\13\6570_1268.png" />
-    <Content Include="DataSources\mapi\13\6570_1269.png" />
-    <Content Include="DataSources\mapi\13\6570_1270.png" />
-    <Content Include="DataSources\mapi\13\6571_1265.png" />
-    <Content Include="DataSources\mapi\13\6571_1266.png" />
-    <Content Include="DataSources\mapi\13\6571_1267.png" />
-    <Content Include="DataSources\mapi\13\6571_1268.png" />
-    <Content Include="DataSources\mapi\13\6571_1269.png" />
-    <Content Include="DataSources\mapi\13\6571_1270.png" />
-    <Content Include="DataSources\mapi\13\6572_1265.png" />
-    <Content Include="DataSources\mapi\13\6572_1266.png" />
-    <Content Include="DataSources\mapi\13\6572_1267.png" />
-    <Content Include="DataSources\mapi\13\6572_1268.png" />
-    <Content Include="DataSources\mapi\13\6572_1269.png" />
-    <Content Include="DataSources\mapi\13\6572_1270.png" />
-    <Content Include="DataSources\mapi\13\6573_1265.png" />
-    <Content Include="DataSources\mapi\13\6573_1266.png" />
-    <Content Include="DataSources\mapi\13\6573_1267.png" />
-    <Content Include="DataSources\mapi\13\6573_1268.png" />
-    <Content Include="DataSources\mapi\13\6573_1269.png" />
-    <Content Include="DataSources\mapi\13\6573_1270.png" />
-    <Content Include="DataSources\mapi\13\6574_1265.png" />
-    <Content Include="DataSources\mapi\13\6574_1266.png" />
-    <Content Include="DataSources\mapi\13\6574_1267.png" />
-    <Content Include="DataSources\mapi\13\6574_1268.png" />
-    <Content Include="DataSources\mapi\13\6574_1269.png" />
-    <Content Include="DataSources\mapi\13\6574_1270.png" />
-    <Content Include="DataSources\mapi\13\6575_1265.png" />
-    <Content Include="DataSources\mapi\13\6575_1266.png" />
-    <Content Include="DataSources\mapi\13\6575_1267.png" />
-    <Content Include="DataSources\mapi\13\6575_1268.png" />
-    <Content Include="DataSources\mapi\13\6575_1269.png" />
-    <Content Include="DataSources\mapi\13\6575_1270.png" />
-    <Content Include="DataSources\mapi\13\6576_1265.png" />
-    <Content Include="DataSources\mapi\13\6576_1266.png" />
-    <Content Include="DataSources\mapi\13\6576_1267.png" />
-    <Content Include="DataSources\mapi\13\6576_1268.png" />
-    <Content Include="DataSources\mapi\13\6576_1269.png" />
-    <Content Include="DataSources\mapi\13\6576_1270.png" />
-    <Content Include="DataSources\mapi\13\6577_1265.png" />
-    <Content Include="DataSources\mapi\13\6577_1266.png" />
-    <Content Include="DataSources\mapi\13\6577_1267.png" />
-    <Content Include="DataSources\mapi\13\6577_1268.png" />
-    <Content Include="DataSources\mapi\13\6577_1269.png" />
-    <Content Include="DataSources\mapi\13\6577_1270.png" />
-    <Content Include="DataSources\mapi\13\6578_1265.png" />
-    <Content Include="DataSources\mapi\13\6578_1266.png" />
-    <Content Include="DataSources\mapi\13\6578_1267.png" />
-    <Content Include="DataSources\mapi\13\6578_1268.png" />
-    <Content Include="DataSources\mapi\13\6578_1269.png" />
-    <Content Include="DataSources\mapi\13\6578_1270.png" />
-    <Content Include="DataSources\map\13\6570_1265.png" />
-    <Content Include="DataSources\map\13\6570_1266.png" />
-    <Content Include="DataSources\map\13\6570_1267.png" />
-    <Content Include="DataSources\map\13\6570_1268.png" />
-    <Content Include="DataSources\map\13\6570_1269.png" />
-    <Content Include="DataSources\map\13\6570_1270.png" />
-    <Content Include="DataSources\map\13\6571_1265.png" />
-    <Content Include="DataSources\map\13\6571_1266.png" />
-    <Content Include="DataSources\map\13\6571_1267.png" />
-    <Content Include="DataSources\map\13\6571_1268.png" />
-    <Content Include="DataSources\map\13\6571_1269.png" />
-    <Content Include="DataSources\map\13\6571_1270.png" />
-    <Content Include="DataSources\map\13\6572_1265.png" />
-    <Content Include="DataSources\map\13\6572_1266.png" />
-    <Content Include="DataSources\map\13\6572_1267.png" />
-    <Content Include="DataSources\map\13\6572_1268.png" />
-    <Content Include="DataSources\map\13\6572_1269.png" />
-    <Content Include="DataSources\map\13\6572_1270.png" />
-    <Content Include="DataSources\map\13\6573_1265.png" />
-    <Content Include="DataSources\map\13\6573_1266.png" />
-    <Content Include="DataSources\map\13\6573_1267.png" />
-    <Content Include="DataSources\map\13\6573_1268.png" />
-    <Content Include="DataSources\map\13\6573_1269.png" />
-    <Content Include="DataSources\map\13\6573_1270.png" />
-    <Content Include="DataSources\map\13\6574_1265.png" />
-    <Content Include="DataSources\map\13\6574_1266.png" />
-    <Content Include="DataSources\map\13\6574_1267.png" />
-    <Content Include="DataSources\map\13\6574_1268.png" />
-    <Content Include="DataSources\map\13\6574_1269.png" />
-    <Content Include="DataSources\map\13\6574_1270.png" />
-    <Content Include="DataSources\map\13\6575_1265.png" />
-    <Content Include="DataSources\map\13\6575_1266.png" />
-    <Content Include="DataSources\map\13\6575_1267.png" />
-    <Content Include="DataSources\map\13\6575_1268.png" />
-    <Content Include="DataSources\map\13\6575_1269.png" />
-    <Content Include="DataSources\map\13\6575_1270.png" />
-    <Content Include="DataSources\map\13\6576_1265.png" />
-    <Content Include="DataSources\map\13\6576_1266.png" />
-    <Content Include="DataSources\map\13\6576_1267.png" />
-    <Content Include="DataSources\map\13\6576_1268.png" />
-    <Content Include="DataSources\map\13\6576_1269.png" />
-    <Content Include="DataSources\map\13\6576_1270.png" />
-    <Content Include="DataSources\map\13\6577_1265.png" />
-    <Content Include="DataSources\map\13\6577_1266.png" />
-    <Content Include="DataSources\map\13\6577_1267.png" />
-    <Content Include="DataSources\map\13\6577_1268.png" />
-    <Content Include="DataSources\map\13\6577_1269.png" />
-    <Content Include="DataSources\map\13\6577_1270.png" />
-    <Content Include="DataSources\map\13\6578_1265.png" />
-    <Content Include="DataSources\map\13\6578_1266.png" />
-    <Content Include="DataSources\map\13\6578_1267.png" />
-    <Content Include="DataSources\map\13\6578_1268.png" />
-    <Content Include="DataSources\map\13\6578_1269.png" />
-    <Content Include="DataSources\map\13\6578_1270.png" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TestData\mapi\13\6570_1265.png" />
+    <Content Include="TestData\mapi\13\6570_1266.png" />
+    <Content Include="TestData\mapi\13\6570_1267.png" />
+    <Content Include="TestData\mapi\13\6570_1268.png" />
+    <Content Include="TestData\mapi\13\6570_1269.png" />
+    <Content Include="TestData\mapi\13\6570_1270.png" />
+    <Content Include="TestData\mapi\13\6571_1265.png" />
+    <Content Include="TestData\mapi\13\6571_1266.png" />
+    <Content Include="TestData\mapi\13\6571_1267.png" />
+    <Content Include="TestData\mapi\13\6571_1268.png" />
+    <Content Include="TestData\mapi\13\6571_1269.png" />
+    <Content Include="TestData\mapi\13\6571_1270.png" />
+    <Content Include="TestData\mapi\13\6572_1265.png" />
+    <Content Include="TestData\mapi\13\6572_1266.png" />
+    <Content Include="TestData\mapi\13\6572_1267.png" />
+    <Content Include="TestData\mapi\13\6572_1268.png" />
+    <Content Include="TestData\mapi\13\6572_1269.png" />
+    <Content Include="TestData\mapi\13\6572_1270.png" />
+    <Content Include="TestData\mapi\13\6573_1265.png" />
+    <Content Include="TestData\mapi\13\6573_1266.png" />
+    <Content Include="TestData\mapi\13\6573_1267.png" />
+    <Content Include="TestData\mapi\13\6573_1268.png" />
+    <Content Include="TestData\mapi\13\6573_1269.png" />
+    <Content Include="TestData\mapi\13\6573_1270.png" />
+    <Content Include="TestData\mapi\13\6574_1265.png" />
+    <Content Include="TestData\mapi\13\6574_1266.png" />
+    <Content Include="TestData\mapi\13\6574_1267.png" />
+    <Content Include="TestData\mapi\13\6574_1268.png" />
+    <Content Include="TestData\mapi\13\6574_1269.png" />
+    <Content Include="TestData\mapi\13\6574_1270.png" />
+    <Content Include="TestData\mapi\13\6575_1265.png" />
+    <Content Include="TestData\mapi\13\6575_1266.png" />
+    <Content Include="TestData\mapi\13\6575_1267.png" />
+    <Content Include="TestData\mapi\13\6575_1268.png" />
+    <Content Include="TestData\mapi\13\6575_1269.png" />
+    <Content Include="TestData\mapi\13\6575_1270.png" />
+    <Content Include="TestData\mapi\13\6576_1265.png" />
+    <Content Include="TestData\mapi\13\6576_1266.png" />
+    <Content Include="TestData\mapi\13\6576_1267.png" />
+    <Content Include="TestData\mapi\13\6576_1268.png" />
+    <Content Include="TestData\mapi\13\6576_1269.png" />
+    <Content Include="TestData\mapi\13\6576_1270.png" />
+    <Content Include="TestData\mapi\13\6577_1265.png" />
+    <Content Include="TestData\mapi\13\6577_1266.png" />
+    <Content Include="TestData\mapi\13\6577_1267.png" />
+    <Content Include="TestData\mapi\13\6577_1268.png" />
+    <Content Include="TestData\mapi\13\6577_1269.png" />
+    <Content Include="TestData\mapi\13\6577_1270.png" />
+    <Content Include="TestData\mapi\13\6578_1265.png" />
+    <Content Include="TestData\mapi\13\6578_1266.png" />
+    <Content Include="TestData\mapi\13\6578_1267.png" />
+    <Content Include="TestData\mapi\13\6578_1268.png" />
+    <Content Include="TestData\mapi\13\6578_1269.png" />
+    <Content Include="TestData\mapi\13\6578_1270.png" />
+    <Content Include="TestData\map\13\6570_1265.png" />
+    <Content Include="TestData\map\13\6570_1266.png" />
+    <Content Include="TestData\map\13\6570_1267.png" />
+    <Content Include="TestData\map\13\6570_1268.png" />
+    <Content Include="TestData\map\13\6570_1269.png" />
+    <Content Include="TestData\map\13\6570_1270.png" />
+    <Content Include="TestData\map\13\6571_1265.png" />
+    <Content Include="TestData\map\13\6571_1266.png" />
+    <Content Include="TestData\map\13\6571_1267.png" />
+    <Content Include="TestData\map\13\6571_1268.png" />
+    <Content Include="TestData\map\13\6571_1269.png" />
+    <Content Include="TestData\map\13\6571_1270.png" />
+    <Content Include="TestData\map\13\6572_1265.png" />
+    <Content Include="TestData\map\13\6572_1266.png" />
+    <Content Include="TestData\map\13\6572_1267.png" />
+    <Content Include="TestData\map\13\6572_1268.png" />
+    <Content Include="TestData\map\13\6572_1269.png" />
+    <Content Include="TestData\map\13\6572_1270.png" />
+    <Content Include="TestData\map\13\6573_1265.png" />
+    <Content Include="TestData\map\13\6573_1266.png" />
+    <Content Include="TestData\map\13\6573_1267.png" />
+    <Content Include="TestData\map\13\6573_1268.png" />
+    <Content Include="TestData\map\13\6573_1269.png" />
+    <Content Include="TestData\map\13\6573_1270.png" />
+    <Content Include="TestData\map\13\6574_1265.png" />
+    <Content Include="TestData\map\13\6574_1266.png" />
+    <Content Include="TestData\map\13\6574_1267.png" />
+    <Content Include="TestData\map\13\6574_1268.png" />
+    <Content Include="TestData\map\13\6574_1269.png" />
+    <Content Include="TestData\map\13\6574_1270.png" />
+    <Content Include="TestData\map\13\6575_1265.png" />
+    <Content Include="TestData\map\13\6575_1266.png" />
+    <Content Include="TestData\map\13\6575_1267.png" />
+    <Content Include="TestData\map\13\6575_1268.png" />
+    <Content Include="TestData\map\13\6575_1269.png" />
+    <Content Include="TestData\map\13\6575_1270.png" />
+    <Content Include="TestData\map\13\6576_1265.png" />
+    <Content Include="TestData\map\13\6576_1266.png" />
+    <Content Include="TestData\map\13\6576_1267.png" />
+    <Content Include="TestData\map\13\6576_1268.png" />
+    <Content Include="TestData\map\13\6576_1269.png" />
+    <Content Include="TestData\map\13\6576_1270.png" />
+    <Content Include="TestData\map\13\6577_1265.png" />
+    <Content Include="TestData\map\13\6577_1266.png" />
+    <Content Include="TestData\map\13\6577_1267.png" />
+    <Content Include="TestData\map\13\6577_1268.png" />
+    <Content Include="TestData\map\13\6577_1269.png" />
+    <Content Include="TestData\map\13\6577_1270.png" />
+    <Content Include="TestData\map\13\6578_1265.png" />
+    <Content Include="TestData\map\13\6578_1266.png" />
+    <Content Include="TestData\map\13\6578_1267.png" />
+    <Content Include="TestData\map\13\6578_1268.png" />
+    <Content Include="TestData\map\13\6578_1269.png" />
+    <Content Include="TestData\map\13\6578_1270.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
